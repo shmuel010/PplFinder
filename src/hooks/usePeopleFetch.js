@@ -12,13 +12,12 @@ export const usePeopleFetch = (index = 1) => {
   const fetchUsers = async () => {
     index++;
     setIsLoading(true);
-    // const response =
       await axios.get(`https://randomuser.me/api/?results=25&page=${index++}`)
       .then((response)=>{
         setUsers(prev => [...prev, ...response.data.results]);
     }).catch((e)=>{
+          console.log(e.message());
     });
-
     setIsLoading(false);
   };
   return { users, isLoading };
