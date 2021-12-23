@@ -20,5 +20,6 @@ export const usePeopleFetch = (index = 1) => {
     });
     setIsLoading(false);
   };
+
   return { users, isLoading };
 };
