@@ -9,4 +9,4 @@
 ### Installation:
 - Use "npm install" to install related frameworks.
 
-production link - https://ziv-weather-app.herokuapp.com/
+production link - https://ppl-founder-with-favorites.herokuapp.com/#/
